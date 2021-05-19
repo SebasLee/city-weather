@@ -18,7 +18,9 @@ let weather  = {
         document.querySelector(".city").innerText ="Weather in " + name; 
         document.querySelector(".temp").innerText = temp + "  Degrees Farenheit";
         if (temp > 80) {
-            document.querySelector('.thermo').src = 'icons/hotthermo.png';
+            document.querySelector('.thermo').src = 'icons/hottemp.png';
+        } else if (temp < 80 && temp > 60) {
+            document.querySelector('.thermo').src = 'icons/averagetemp.png';
         } else {
             document.querySelector('.thermo').src = 'icons/coldthermo.png';
         };
