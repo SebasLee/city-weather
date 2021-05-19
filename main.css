@@ -1,0 +1,31 @@
+body {
+    background-image: url("sky2.jpeg");
+}
+
+.box {
+    background-color:black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.card {
+    padding-top: 20px;
+}
+
+.search button {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.weather {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.desc {
+    text-transform: capitalize;
+}
