@@ -30,6 +30,11 @@ body {
     color: white;
 }
 
+.thermo {
+    display: none;
+    text-align: center;
+}
+
 .desc {
     text-transform: capitalize;
 }
