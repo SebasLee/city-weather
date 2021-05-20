@@ -1,4 +1,5 @@
 let weather  = {
+    // Grab and Utilize API
     apiKey: "e7bbb3b21a40818a26a279ac70c9ba94",
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
@@ -9,6 +10,7 @@ let weather  = {
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
+    // Display information from JSON
     displayWeather: function(data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
@@ -31,19 +33,20 @@ let weather  = {
         document.querySelector(".hum").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
     },
+    // Activates the entire function
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
     },
 };
 
+// Click on Search Event
 document.querySelector(".search button").onclick = function () {
     weather.search();
 };
 
+// Press Return Button Event
 document.querySelector(".search-bar").addEventListener("keyup", function(e) {
     if (e.keyCode === 13) {
         document.querySelector(".search button").click();
     }
 });
-
-    
