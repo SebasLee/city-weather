@@ -18,11 +18,17 @@ let weather  = {
         document.querySelector(".city").innerText ="Weather in " + name; 
         document.querySelector(".temp").innerText = temp + "  Degrees Farenheit";
         if (temp > 80) {
-            document.querySelector('.thermo').src = 'icons/hottemp.png';
+            var x = document.createElement('img');
+            x.setAttribute("src", 'icons/hottemp.png');
+            document.querySelector('.thermo').appendChild(x);
         } else if (temp < 80 && temp > 60) {
-            document.querySelector('.thermo').src = 'icons/averagetemp.png';
+            var x = document.createElement('img');
+            x.setAttribute("src", 'icons/averagetemp.png');
+            document.querySelector('.thermo').appendChild(x);
         } else {
-            document.querySelector('.thermo').src = 'icons/coldthermo.png';
+            var x = document.createElement('img');
+            x.setAttribute("src", 'icons/coldthermo.png');
+            document.querySelector('.thermo').appendChild(x);
         };
         document.querySelector(".desc").innerText = description;
         document.querySelector(".hum").innerText = "Humidity: " + humidity + "%";
