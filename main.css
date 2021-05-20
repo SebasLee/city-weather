@@ -1,5 +1,8 @@
 body {
-    background-image: url("sky2.jpeg");
+    background-image: url("sky3.jpg");
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center;         
 }
 
 .box {
