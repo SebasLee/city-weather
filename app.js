@@ -36,6 +36,14 @@ let weather  = {
     },
 };
 
-document.querySelector(".search button").addEventListener("click", function () {
+document.querySelector(".search button").onclick = function () {
     weather.search();
+};
+
+document.querySelector(".search-bar").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {
+        document.querySelector(".search button").click();
+    }
 });
+
+    
