@@ -19,10 +19,13 @@ let weather  = {
         document.querySelector(".temp").innerText = temp + "  Degrees Farenheit";
         if (temp > 80) {
             document.querySelector('.thermo').src = 'icons/hottemp.png';
+            document.querySelector('.thermo').style.display = "inline";
         } else if (temp < 80 && temp > 60) {
             document.querySelector('.thermo').src = 'icons/averagetemp.png';
+            document.querySelector('.thermo').style.display = "inline";
         } else {
             document.querySelector('.thermo').src = 'icons/coldthermo.png';
+            document.querySelector('.thermo').style.display = "inline";
         };
         document.querySelector(".desc").innerText = description;
         document.querySelector(".hum").innerText = "Humidity: " + humidity + "%";

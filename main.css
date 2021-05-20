@@ -3,6 +3,7 @@ body {
     background-size: cover;                     
     background-repeat: no-repeat;
     background-position: center center;         
+    background-attachment: fixed;
 }
 
 .box {
@@ -27,6 +28,11 @@ body {
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 20px;
     color: white;
+}
+
+.thermo {
+    display: none;
+    text-align: center;
 }
 
 .desc {
