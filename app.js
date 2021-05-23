@@ -42,6 +42,8 @@ let weather  = {
 // Click on Search Event
 document.querySelector(".search button").onclick = function () {
     weather.search();
+    var input = document.querySelector(".search-bar");
+    input.select();
 };
 
 // Press Return Button Event
